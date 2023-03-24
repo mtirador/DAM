@@ -1,1 +1,83 @@
+ Comandos cmd
+ 
+/?	Argumento que permite obtener la ayuda del comando al que acompaña.
+CD	Muestra el nombre del directorio actual o cambia a otro directorio.
+CLEANMGR	Libera espacio en disco de manera automática.
+CLS	Borra la pantalla.
+CMD	Inicia una nueva instancia del intérprete de comandos de Windows
+COLOR	Establece los colores de primer plano y fondo predeterminados de la consola.
+COPY	Copia uno o más archivos en otra ubicación.
+COPY CON	Permite la creación y edición de un fichero desde la línea de comandos.
+DATE	Muestra o establece la fecha.
+DEFRAG	Permite desfragmentar el disco duro que se le indique.
+DEL	Elimina uno o más archivos.
+DIR	Muestra una lista de archivos y subdirectorios en un directorio.
+DISKPART	Muestra o configura las propiedades de partición de disco.
+ECHO	Muestra mensajes, o activa y desactiva el eco.
+EXIT	Sale del intérprete de comandos.
+FIND	Busca una cadena de texto en uno o más archivos.
+FOR	Ejecuta el comando especificado para cada archivo en un conjunto de archivos.
+FORMAT	Formatea un disco para usarse con Windows.
+GETMAC	Devuelve la dirección MAC de los adaptadores de red del equipo.
+GOTO	Direcciona el intérprete de comandos de Windows a una línea con etiqueta en un programa por lotes.
+HELP	Proporciona información de Ayuda para los comandos de Windows.
+IF	Ejecuta procesos condicionales en programas por lotes.
+IPCONFIG	Muestra información detallada de los adaptadores de red del equipo.
+LOGOFF	Cierra la sesión del usuario actual.
+MD	Crea un directorio.
+MKDIR	Crea un directorio.
+MOVE	Mueve uno o más archivos de un directorio a otro en la misma unidad.
+NETSTAT	Muestra estadísticas del protocolo y conexiones TCP/IP en uso.
+PAUSE	Suspende el proceso de un archivo por lotes y muestra un mensaje.
+PING	Realiza una llamada al host indicado mostrando si se obtiene o no respuesta.
+RD	Elimina un directorio.
+REN	Cambia el nombre de uno o más archivos.
+REPLACE	Reemplaza archivos.
+ROBOCOPY	Utilidad avanzada para copiar archivos y árboles de directorios.
+SET	Muestra, establece o quita variables de entorno de Windows.
+SFC	Examina la integridad de los ficheros del sistema y reemplaza los dañados.
+SHUTDOWN	Permite el apagado local o remoto de un equipo.
+START	Inicia otra ventana para ejecutar un programa o comando especificado.
+TASKLIST	Muestra todas las tareas en ejecución, incluidos los servicios.
+TASKKILL	Termina o interrumpe un proceso o aplicación que se está ejecutando.
+TIME	Muestra o establece la hora del sistema.
+TRACERT	Muestra todos los redireccionamientos que se llevan a cabo para alcanzar un host.
+TREE	Muestra gráficamente la estructura de directorios de una unidad o ruta de acceso.
+TYPE	Muestra el contenido de un archivo de texto en la ventana de comandos.
+VER	Muestra la versión de Windows.
+VOL	Muestra la etiqueta del volumen y el número de serie del disco.
+
+comandos Powershell
+
+Clear-Content	Elimina el contenido de un elemento (por ejemplo, elimina el texto de un archivo), pero no elimina el elemento en sí.
+Copy-Item	Permite copiar archivos y directorios.
+Exit	Sale de la consola PowerShell
+Format-List	Aplica a la salida el formato de una lista.
+Format-Table	Aplica a la salida el formato de una tabla.
+Format-Wide	Aplica a los objetos el formato de una tabla ancha en la que se muestra únicamente una propiedad de cada objeto.
+Get-ChildItem	Devuelve una lista con todos los elementos de un directorio.
+Get-Command	Obtiene información básica acerca de los cmdlets
+Get-Content	Muestra el contenido de un archivo de texto.
+Get-Date	Devuelve la fecha. También permite saber qué día fue en una determinada fecha del pasado.
+Get-Help	Proporciona información sobre cmdlets de PowerShell y sus funciones.
+Get-History	Muestra el historial de comandos que se ejecutaron durante una sesión.
+Get-Host	Muestra la versión de PowerShell que se está usando.
+Get-Item	Devuelve información de un elemento en la ubicación indicada.
+Get-Member	Devuelve las propiedades y métodos del objeto indicado.
+Get-Proccess	Muestra la lista de procesos que se están ejecutando en el equipo.
+Get-Random	Devuelve un número aleatorio entre 0 y 2147483646.
+Get-Variable	Muestra los valores de las variables.
+Invoke-Command	Ejecuta un comando o script de forma local o remota.
+Move-Item	Mueve un elemento de una ubicación a otra.
+Remove-Item	Permite eliminar elementos (archivos, carpetas, variables,…).
+Read-Host	Lee una línea de entrada de la consola.
+Set-Content	Permite guardar texto en archivos.
+Set-ExecutionPolicy	Permite cambiar la directiva de seguridad de ejecución.
+Set-Variable	Permite asignar, cambiar o restablecer el valor de una variable.
+Sort-Object	Ordena los objetos por los valores de las propiedades.
+Start-Proccess	Inicia la ejecución de un proceso.
+Stop-Proccess	Detiene la ejecución de un proceso.
+Where-object	Crea un filtro que controla los objetos que se van a pasar junto con una canalización de comandos.
+Write-Host	Escribe la salida indicada en la consola.
+Write-Output	Crea un objeto y además lo muestra en consola.
 
