@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Doctype indica que estoy utilizando un documento de HTML 5-->
+
+<html><!--La línea 3 indica que empiezo el documento-->
+    
+<!--La etiqueta img la utilizo para añadir una imagen y con src llamo a la ubicación de la imagen.
+usemap:  sirve para el mapa de imágenes, al que llamaré #partes.  El sÍmbolo # delante de partes es para señalar que se trata de un identificador 
+y no de una dirección, es decir, que va a ser usada por el elemento map mediante el atributo name que como indicamos anteriormente 
+se llamará partes,(ésta vez sin #). -->
+
+        <img src="Eje.png" usemap="#partes" alt="eje de coordenadas"  >
+
+        <!--Dentro de map name="partes", he definido las 4 áreas de mi eje cartesiano, y las hice según la dirección de las agujas del reloj,
+        empezando por la izquierda superior (1º píldoras), derecha superior(2ºw3school), derecha inferior(3º Ceinmark), izquierda inferior(4ºcss-tricks)
+        area:  define la zona.
+        shape: la forma de la zona, en éste caso "rect", es decir, recta. 
+        coords: indica las coordenadas a definir. Para poder guiarme he utilizado el inspector de imagen y el programa paint, las coordenadas primeras
+        indican lo siguiente ejemplo:  donde empieza coordenada 0,0(x,y) y las dos últimas  341 ancho ,259 alto(x,y), la conclusion que saqué,
+        es que las dos primeras coordenadas indican el comienzo y la dos ultimas las "dimensiones".
+            
+        href: sirve para señalar la dirección del enlace. 
+        alt: especifica un texto alternativo para una imagen si un usuario por algún motivo no puede verla
+        target="_blank": especifica que la página se abrirá en una nueva ventana de navegador
+        -->
+        <map name="partes">
+            <area shape="rect" coords="0,0,341,259" href="https://www.youtube.com/user/pildorasinformaticas" alt="pildorasinformaticas" target="_blank">
+            <area shape="rect" coords="341,0,700,259" href="https://www.w3schools.com/" alt="w3schools" target="_blank">
+            <area shape="rect" coords="341,242,700,500" href="https://ceinmark.net/" alt="ceinmark" target="_blank">
+            <area shape="rect" coords="0,242,341,500" href="https://css-tricks.com/" alt="css-tricks" target="_blank">
+           
+        </map>
+        <!--</map> : cierra el mapa de imagen-->
+  
+
+
+</html><!--línea de fin del documento de html-->
