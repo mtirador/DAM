@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/*  background-color: #973535;    */
+  
+
+/* Estilos del encabezado */
+header {
+
+  
+    background-color: #f9e9f8;
+    color: #3884d0fe; 
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgb(205, 186, 209); /*borde */
+}  
+
+nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    
+    font-family: Verdana;
+    font-family: 'PT Sans';/* tipos de letra*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+/* Estilos del contenido */
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="correo"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
