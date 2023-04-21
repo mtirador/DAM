@@ -8,8 +8,7 @@
 <br>
 Este repositorio contiene mis prácticas y ejercicios realizados durante el curso de Desarrollo de Aplicaciones Multiplataforma.
 
-Asignaturas
-El curso de Desarrollo de Aplicaciones Multiplataforma se divide en varias asignaturas:
+Asignaturas:
 
 Entornos de Desarrollo,
 Sistemas Informáticos,
