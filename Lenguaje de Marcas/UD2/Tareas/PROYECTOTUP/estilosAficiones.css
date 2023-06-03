@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Logo img{
+    width: 150px;
+  }
+  
+  body{
+    background-color: #b7aeae;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    
+  }
+  
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7aeae;
+    padding: 10px;
+    
+    }
+    nav{
+     position: relative;
+      top:0;
+      right: 0;
+      width:100%;
+    }
+  
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      margin:65px 0;
+      padding: 0;
+    }
+    
+    nav li {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      
+    }
+    
+    nav ul li a:hover {
+      color: rgb(83, 66, 66);
+      text-decoration: underline;
+    }
+    
+    img {
+      width: 100px;
+      height: auto;
+    }
+    
+    
+    
+   
+    
+  
+   
+  
+  /*boton flecha inicio*/
+  
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #444;
+  
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  .scroll-to-top:hover {
+  
+    background-color: #777;
+    text-decoration:none;
+  }
+  
+  .scroll-to-top img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /*redes sociales*/
+  
+  footer {
+  
+    background-color: #b7aeae;
+    padding: 20px;
+    margin-top: 50px;
+  
+  
+  }
+  
+  footer {
+    background-image: url('./fotos/rama12.png');
+    background-size:20ch;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding: 30px;
+  }
+  
+  
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  
+  }
+  
+  .redes-sociales a {
+    color: #ecebeb;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  .redes-sociales a:hover {
+    color:rgb(83, 66, 66);
+  }
+  
+  
+  
+  /*slider prueba*/
+  
+  #Slider_id {
+    font-family: sans-serif;
+    margin: auto;
+    background-color: #b7aeae;
+    max-width: 900px;
+    width: 900px;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  #Slider_id>ul,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #Slider_id>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+    
+  }
+  
+  #Slider_id>ul.slider h1 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #Slider_id>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #b7aeae;
+   
+  }
+  
+  #Slider_id>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #Slider_id>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+  }
+  
+  #Slider_id>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  #Slider_id>.menu {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #Slider_id>.menu li {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #Slider_id>.menu li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color:rgb(83, 66, 66);
+    padding: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius:1pc;
+  }
+  
+  .slider-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 10px;
+  }
+  .slider-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  
+  .slider-content .slider-caption {
+    background-color: rgba(168, 152, 152, 0.5);
+    color: rgb(83, 66,66);
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  .slider-caption h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .slider-caption p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  
+
+  /*tarjetas*/
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px 0;
+    opacity: 0.7;
+    padding: 20;
+    
+  }
+  .card {
+    color: rgb(83, 66, 66);
+    flex: 1;
+    background-color: #bacfc2;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .card-content {
+    max-height: 220px;
+    overflow: auto;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .hover-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .card:hover .hover-image {
+    display: block;
+  }
+  
+  /*contenido*/
+  
+  .texto-centrado {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .texto-centrado p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .texto-centrado h3 {
+    text-align: center;
+  }
+  
+  
+  /*contenido*/
+  
+  .texto-centrado {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .texto-centrado p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .texto-centrado h3 {
+    text-align: center;
+  }
+  
+  /*contenido*/
+
+  .texto-centrado {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .texto-centrado p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .texto-centrado h3{
+    text-align: center;
+  }
+  
+
+  /*banner*/
+
+
+  .banner {
+    position: relative;
+    background-image: url("./fotos/bosque.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column; /* Añadido: establecer dirección de flexión en columna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(83, 66, 66, 0.5);
+  }
+  
+  .banner:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .overlay-subtext {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px; /* Espacio adicional entre el texto principal y el texto adicional */
+  }
+  
+    

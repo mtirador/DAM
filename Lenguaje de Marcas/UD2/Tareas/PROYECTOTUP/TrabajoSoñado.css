@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Logo img {
+  width: 150px;
+}
+
+body {
+  background-color: #b7aeae;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7aeae;
+  padding: 10px;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 65px 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: rgb(83, 66, 66);
+  text-decoration: underline;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+/* texto */
+
+.container {
+  color: rgb(83, 66, 66);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 50px;
+  height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+/* boton flecha inicio */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: #484747;
+
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+  background-color: #777;
+  text-decoration: none;
+}
+
+.scroll-to-top img {
+  width: 20px;
+  height: 20px;
+}
+
+/* redes sociales */
+
+footer {
+  background-color: #b7aeae;
+  padding: 20px;
+  margin-top: 50px;
+  background-image: url('./fotos/rama12.png');
+  background-size: 20ch;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.redes-sociales a {
+  color: #ecebeb;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+  color: rgb(83, 66, 66);
+}
+
+/* tarjetas/img */
+
+.card-container {
+  color: rgb(83, 66, 66);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  }
+  
+  
+  
+  .image {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 25%;
+  height: auto;
+  }
+  
+  .reverse {
+  flex-direction: row-reverse;
+  }
+
+  .card h2, .card p {
+    
+    white-space: nowrap; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final del texto desbordado */
+  }
+  
+  .card {
+    color: rgb(83, 66, 66);
+    width: fit-content; /* Ajusta el ancho automáticamente al contenido */
+    max-width: 400px; /* Establece un ancho máximo para evitar que se hagan demasiado grandes */
+    height: fit-content; /* Ajusta la altura automáticamente al contenido */
+    background-color: #bacfc2;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    opacity: 0.7;
+  }
+  
+  .card h2,
+  .card p {
+    white-space: normal; /* Permite que el texto envuelva según sea necesario */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final del texto desbordado */
+  }
+  
+  
+  
+  .card h2 {
+    
+    margin-bottom: 10px; /* Agrega espacio inferior de 10px al elemento h2 */
+  }
+  
+  .card p {
+    margin-top: 10px; /* Agrega espacio superior de 10px a los párrafos p */
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+ 
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 20px rgba(67, 58, 58, 0.4);
+  }
+
+  /*esto es para la imagen del banner*/
+  .banner {
+    position: relative;
+    background-image: url("./fotos/trabajo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column; /* Añadido: establecer dirección de flexión en columna */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(83, 66, 66, 0.5);
+  }
+  
+  .banner:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .overlay-subtext {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px; /* Espacio adicional entre el texto principal y el texto adicional */
+  }
+  
+
+
+  
+
+  

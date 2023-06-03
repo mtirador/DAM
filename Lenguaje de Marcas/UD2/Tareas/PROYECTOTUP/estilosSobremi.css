@@ -1,0 +1,294 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Logo img{
+  width: 150px;
+}
+
+body{
+  background-color: #b7aeae;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;
+  
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b7aeae;
+  padding: 10px;
+  
+  }
+  nav{
+   position: relative;
+    top:0;
+    right: 0;
+    width:100%;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin:65px 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  
+  nav ul li a:hover {
+    color: rgb(83, 66, 66);
+    text-decoration: underline;
+  }
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+  
+  
+  
+  
+
+ 
+
+/*boton flecha inicio*/
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: #444;
+
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.scroll-to-top:hover {
+
+  background-color: #777;
+  text-decoration:none;
+}
+
+.scroll-to-top img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/*redes sociales*/
+
+footer {
+
+  background-color: #b7aeae;
+  padding: 20px;
+  margin-top: 50px;
+
+
+}
+
+footer {
+  background-image: url('./fotos/rama12.png');
+  background-size:20ch;
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding: 30px;
+}
+
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+.redes-sociales a {
+  color: #ecebeb;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+.redes-sociales a:hover {
+  color:rgb(83, 66, 66);
+}
+
+
+
+
+/*esto es para la imagen del banner*/
+.banner {
+  position: relative;
+  background-image: url("./fotos/cerezo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+
+}
+.image-shaped {
+  overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+ 
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column; /* Añadido: establecer dirección de flexión en columna */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(83, 66, 66, 0.5);
+}
+
+.banner:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.overlay-subtext {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 10px; /* Espacio adicional entre el texto principal y el texto adicional */
+}
+
+  
+
+
+
+/*tarjetas*/
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+
+.tile {
+  width: 250px;
+  height: 350px;
+  margin: 2em;
+  position: relative;
+  float: left;
+  opacity: 0.7;
+  
+
+}
+
+.tile .front,
+.tile .back {
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+
+.tile h3,
+.tile p,
+.tile a {
+  padding: 0 20px;
+}
+
+.tile .back p {
+  word-wrap: break-word;
+}
+.tile .back p:not(:last-child) {
+  margin-bottom: 10px; /* espacio entre los p */
+}
+
+
+
+.tile img {
+  max-height: 130px;
+  margin-bottom: 1.5em;
+}
+
+.tile .front {
+  background: #bacfc2;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  border-radius: 10px;
+  
+}
+
+.tile .front h3 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(83, 66, 66);
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.tile .back {
+  background:  #bacfc2;
+  color:rgb(83, 66, 66);
+  z-index: 1;
+  padding-top: 50px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.tile .back h3 {
+  font-size: 1.5em;
+  color: rgb(83, 66, 66);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.tile .back a {
+  display: block;
+  font-size: 1.2em;
+  color: rgb(83, 66, 66);
+  border-top: 1px solid #68510c;
+  margin: 0 20px;
+  padding: 0.5em 0;
+}
+
+.tile:hover .front {
+  top: -300px;
+  transform: rotate(2deg);
+}
+
+main {
+  min-height: calc(100vh - 300px); /* Ajusta el valor "300px" según la altura total de tus tarjetas */
+}
