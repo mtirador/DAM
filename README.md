@@ -16,3 +16,10 @@ Repositorio del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones 
 - [Programación Multimedia y Dispositivos Móviles](./PMDM/)
 - [Programación de Servicios y Procesos](./Programación%20de%20Servicios%20y%20Procesos/)
 - [Sistemas de Gestión Empresarial](./Sistemas%20de%20Gestion%20Empresarial/)
+
+Contenido:
+El repositorio está estructurado en diferentes carpetas, cada una correspondiente a una asignatura del curso. Dentro de cada carpeta se encuentran las prácticas y ejercicios realizados en dicha asignatura. 
+
+<div align="center">
+  <sub>Hecho con ❤️ por mtirador </sub>
+</div>
