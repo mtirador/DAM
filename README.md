@@ -1,25 +1,18 @@
+
 # DAM
+Repositorio del Ciclo Formativo de Grado Superior de Desarrollo de Aplicaciones Multiplataforma.
 
-<h1 align="center">Desarrollo de Aplicaciones Multiplataforma</h1>
-<div align="center">
-  <img src="https://img.shields.io/github/languages/count/tuusuario/multiplatform-practices?style=flat-square" alt="Lenguajes">
-  <img src="https://img.shields.io/github/license/tuusuario/multiplatform-practices?style=flat-square" alt="Licencia">
-</div>
-<br>
-Este repositorio contiene mis prácticas y ejercicios realizados durante el curso de Desarrollo de Aplicaciones Multiplataforma.
+## Índice
+### Primer curso
+- [Bases de Datos](./Bases%20de%20Datos/)
+- [Entornos de Desarrollo](./Entornos%20de%20Desarrollo/)
+- [Lenguajes de Marcas y Sistemas de Gestión de Información](./Lenguaje%20de%20Marcas/)
+- [Programación](./Programación/)
+- [Sistemas Informáticos](./Sistemas%20informáticos/)
 
-Asignaturas:
-
-Entornos de Desarrollo,
-Sistemas Informáticos,
-Programación Java,
-Lenguajes de marcas, 
-Bases de datos.  
-En cada una de estas asignaturas he realizado diversas prácticas y ejercicios para poner en práctica los conocimientos adquiridos.
-
-Contenido:
-El repositorio está estructurado en diferentes carpetas, cada una correspondiente a una asignatura del curso. Dentro de cada carpeta se encuentran las prácticas y ejercicios realizados en dicha asignatura. 
-
-<div align="center">
-  <sub>Hecho con ❤️ por mtirador </sub>
-</div>
+### Segundo curso
+- [Acceso a Datos](./Acceso%20de%20Datos/)
+- [Desarrollo de Interfaces](./Desarrollo%20de%20Interfaces/)
+- [Programación Multimedia y Dispositivos Móviles](./PMDM/)
+- [Programación de Servicios y Procesos](./Programación%20de%20Servicios%20y%20Procesos/)
+- [Sistemas de Gestión Empresarial](./Sistemas%20de%20Gestion%20Empresarial/)
