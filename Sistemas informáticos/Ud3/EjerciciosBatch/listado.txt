@@ -1,0 +1,24 @@
+Listado de rutas de carpetas para el volumen Windows
+El número de serie del volumen es 60EA-E77D
+C:\USERS\BUFFY\ONEDRIVE\ESCRITORIO
++---CEINMARK
+¦   +---Batch
+¦   +---BD3º
+¦   +---EjerciciosBatch
+¦   +---ENTORNOS
+¦   +---FOL
+¦   +---Git
+¦   +---MARCAS
+¦   ¦   +---Tareas
+¦   +---Programacion
+¦   +---SISTEMAS
+¦       +---capturas de pantalla sistemas
++---ejebat
++---PROYECTO TUP
+¦   +---NerdOrDie.com_Clearview_FREE_StaticPackage
+¦       +---Icons
+¦       ¦   +---Large
+¦       +---Overlays
+¦       +---Panels
+¦       +---Screens
++---VirtualBox
