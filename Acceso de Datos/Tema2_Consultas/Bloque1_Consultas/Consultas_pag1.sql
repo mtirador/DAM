@@ -31,7 +31,7 @@ WHERE edad BETWEEN 28 AND 32 AND nomequipo='Banesto';
 
 -- 6. Indícame el nombre de los ciclistas que el número de caracteres del nombre sea mayor que 8
 
--- Πnombre (σ(Ģlength(nombre))>8) (ciclista)
+-- Πnombre (σ(Ģchar_length(nombre))>8) (ciclista)
 SELECT DISTINCT nombre FROM ciclista
 WHERE CHAR_LENGTH(nombre)>8;
 
@@ -53,7 +53,7 @@ WHERE altura>1500;
 
 -- 10. Listar el dorsal de los ciclistas que hayan ganado algun puerto cuya pendiente sea mayor que 8 o cuya altura esté entre 1800 y 3000
 
--- 
+-- Πdorsal (σpendiente>8 v altura between 1800 and 3000 (puerto))
 SELECT DISTINCT dorsal
 FROM puerto 
 WHERE pendiente > 8 OR (altura BETWEEN 1800 AND 3000);
@@ -61,7 +61,7 @@ WHERE pendiente > 8 OR (altura BETWEEN 1800 AND 3000);
 
 -- (11) Listar el dorsal de los ciclistas que hayan ganado algún puerto cuya pendiente sea mayor que 8 y cuya altura esté entre 1800 y 3000
 
---
+--Πdorsal (σpendiente>8 ^ altura between 1800 and 3000 (puerto))
 
 SELECT DISTINCT dorsal
 FROM puerto 

@@ -46,11 +46,25 @@ SELECT DISTINCT numetapa FROM puerto
 select count(*) from (select distinct numetapa from puerto group by numetapa having avg(altura)>1500)c2; 
 
 
+-- numetapaĢnumetapa,avg(altura) (puerto) -> c1
+-- Πnumetapa (σalturamedia>1500 (c1)) -> c2
+-- Ģcount(*) (c2)
+SELECT COUNT(*) FROM (
+    SELECT DISTINCT numetapa FROM puerto
+    GROUP BY numetapa
+    HAVING AVG(altura)>1500
+  )c2;
+
 -- (17) Listar el dorsal del ciclista con el número de veces que ha llevado algún maillot
 
 --π dorsal, (dorsalĢCOUNT(código)(lleva))
 Select dorsal, count(código)from lleva group by dorsal;
 
+--maria
+-- dorsalĢdorsal,count(*) (lleva)
+SELECT dorsal, COUNT(*) FROM lleva
+  GROUP BY dorsal;
+  
 -- (18) Listar el dorsal del ciclista con el código de maillot y cuántas veces ese ciclista ha llevado ese maillot
 
 -- dorsal,códigoĢdorsal,código,count(*) (lleva)

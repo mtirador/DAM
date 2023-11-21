@@ -24,8 +24,8 @@ SELECT AVG(edad) FROM ciclista GROUP BY nomequipo;
 SELECT COUNT(*)FROM CICLISTA GROUP BY NOMEQUIPO;
 
 -- (07) El número total de puertos
--- Ģcount(nompuerto) (puerto)
-SELECT COUNT(nompuerto) FROM puerto;
+-- Ģcount(*) (puerto)
+SELECT COUNT(*) FROM puerto;
 
 
 -- (08) El número total de puertos mayores de 1500
@@ -35,6 +35,16 @@ SELECT COUNT(*) FROM puerto WHERE altura>1500;
 
 -- (09) Listar el nombre de los equipos que tengan más de 4 ciclistas
 
+
+-- nomequipoĢnomequipo,count(*) numciclistas (ciclista) -> c1
+SELECT nomequipo, COUNT(*) AS numciclistas FROM ciclista
+  GROUP BY nomequipo;
+-- Πnomequipo (σnumciclistas>4 (c1))
+SELECT DISTINCT c1.nomequipo FROM (
+    SELECT nomequipo, COUNT(*) AS numciclistas FROM ciclista
+    GROUP BY nomequipo
+  )c1
+  WHERE c1.numciclistas>4;
 
 
 --OTRA FORMA
