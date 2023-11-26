@@ -17,7 +17,7 @@ Select distinct dorsal from ciclista where nomequipo='banesto' or edad between 2
 
 -- (05) Listar la inicial del equipo de los ciclistas cuyo nombre comience por R
 -- Πleft(nomequipo,1) (σleft(nomequipo,1)='R' (ciclista))
-SELECT DISTINCT LEFT(nomequipo, 1) AS inicial_equipo FROM ciclistaWHERE LEFT(nombre, 1) = 'R';
+SELECT DISTINCT LEFT(nomequipo, 1) AS inicial_equipo FROM ciclista WHERE LEFT(nombre, 1) = 'R';
 
 -- Πleft(nomequipo,1) σnomequipo like 'R%' (ciclista)
 SELECT DISTINCT LEFT(nomequipo, 1) FROM ciclista
