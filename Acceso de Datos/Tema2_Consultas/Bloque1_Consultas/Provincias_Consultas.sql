@@ -34,7 +34,8 @@ GROUP BY autonomia;
 --En esta consulta, se agrupan las provincias por autonomía y se calcula la población total y la superficie total para cada autonomía.
 
 
---Para calcular la densidad de población de Galicia, necesitamos dividir la población total de Galicia entre su superficie total. Utilizando la tabla de provincias proporcionada, podemos hacer la siguiente consulta SQL:
+--Para calcular la densidad de población de Galicia, necesitamos dividir la población total de Galicia entre su superficie total. 
+--Utilizando la tabla de provincias proporcionada, podemos hacer la siguiente consulta SQL:
 
 
 SELECT autonomia,
