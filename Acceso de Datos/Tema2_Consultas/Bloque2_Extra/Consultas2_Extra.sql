@@ -32,8 +32,20 @@ select avg(poblacion)from provincias;
 select distinct provincia from provincias where poblacion>(select avg(poblacion)from provincias);
 
 -- ¿Qué porcentaje del total nacional representa Cantabria en población?
+--Πprovincia(σprovincia='cantabria'(provincias))--->c1
+select distinct provincia from provincias where provincia='cantabria';
+
+--ĢSum(poblacion)(provincias)-->c2
+--resultado= (c1*100)/c2
+
+select((select distinct provincia 
+from provincias where provincia='cantabria')*100)/(select sum(poblacion)from provincias);
+
+
 
 -- ¿En qué posición del ranking autonómico por población de mayor a menor está Cantabria?
+
+
 
 --CICLISTAS: 
 
