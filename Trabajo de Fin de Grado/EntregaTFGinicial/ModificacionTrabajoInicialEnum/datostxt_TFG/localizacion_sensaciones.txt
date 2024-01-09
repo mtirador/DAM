@@ -1,0 +1,8 @@
+Cabeza
+Cuello
+Pecho
+Estomago
+Espalda
+Manos
+Pies
+Otro
