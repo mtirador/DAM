@@ -1,0 +1,1 @@
+podríais tener un prototipo de la interfaz, esquemas de la interfaz, un diagrama de clases, el paso a tablas de la base de datos, documentación relativa a color y tipografía, etc.
