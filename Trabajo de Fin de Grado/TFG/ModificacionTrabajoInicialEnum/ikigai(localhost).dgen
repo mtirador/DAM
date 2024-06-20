@@ -181,7 +181,7 @@
           <GeneratorType>MySqlTextFileGenerator</GeneratorType>
           <GeneratorName>Text File</GeneratorName>
           <GeneratorDescription>loads values from specified text file</GeneratorDescription>
-          <Length>100</Length>
+          <Length>500</Length>
         </Column>
         <Column Name="fechaentrada">
           <Checked>true</Checked>
@@ -316,7 +316,25 @@
           <GeneratorType>MySqlTextFileGenerator</GeneratorType>
           <GeneratorName>Text File</GeneratorName>
           <GeneratorDescription>loads values from specified text file</GeneratorDescription>
-          <Length>100</Length>
+          <Length>500</Length>
+        </Column>
+        <Column Name="completado">
+          <Checked>true</Checked>
+          <DataType>BOOL</DataType>
+          <GeneratorOptions xsi:type="BitGeneratorOptions">
+            <AllowNulls>false</AllowNulls>
+            <NullProportion>10</NullProportion>
+            <UseDefault>false</UseDefault>
+            <ValueDistributionMode>Seed</ValueDistributionMode>
+            <SeedValue>4</SeedValue>
+            <TrueProbability>0.5</TrueProbability>
+            <Unique>false</Unique>
+            <IsAlwaysUnique>false</IsAlwaysUnique>
+          </GeneratorOptions>
+          <GeneratorType>MySqlBoolGenerator</GeneratorType>
+          <GeneratorName>bool</GeneratorName>
+          <GeneratorDescription>fill with true or false values</GeneratorDescription>
+          <Precision>1</Precision>
         </Column>
       </Columns>
     </Table>
@@ -467,7 +485,7 @@
           <GeneratorType>MySqlTextFileGenerator</GeneratorType>
           <GeneratorName>Text File</GeneratorName>
           <GeneratorDescription>loads values from specified text file</GeneratorDescription>
-          <Length>100</Length>
+          <Length>500</Length>
         </Column>
         <Column Name="denominacion">
           <Checked>true</Checked>
@@ -490,7 +508,7 @@
           <GeneratorType>MySqlTextFileGenerator</GeneratorType>
           <GeneratorName>Text File</GeneratorName>
           <GeneratorDescription>loads values from specified text file</GeneratorDescription>
-          <Length>100</Length>
+          <Length>500</Length>
         </Column>
         <Column Name="localizacioncorporal">
           <Checked>true</Checked>
@@ -513,7 +531,7 @@
           <GeneratorType>MySqlTextFileGenerator</GeneratorType>
           <GeneratorName>Text File</GeneratorName>
           <GeneratorDescription>loads values from specified text file</GeneratorDescription>
-          <Length>100</Length>
+          <Length>500</Length>
         </Column>
       </Columns>
     </Table>

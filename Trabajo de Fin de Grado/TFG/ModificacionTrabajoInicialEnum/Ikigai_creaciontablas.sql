@@ -13,7 +13,8 @@ CREATE OR REPLACE TABLE objetivos(
 codobj INT AUTO_INCREMENT,
 denominacion VARCHAR(100),
 fechalimite DATE,
-descripcion varchar(100),
+descripcion varchar(500),
+completado TINYINT(1) DEFAULT 0,
 PRIMARY KEY(codobj)
 
 );
@@ -23,7 +24,7 @@ PRIMARY KEY(codobj)
 CREATE OR REPLACE TABLE entradas(
 identrada int AUTO_INCREMENT,
 titulo VARCHAR(100),
-descripcion VARCHAR(100),
+descripcion VARCHAR(500),
 fechaentrada DATE,
 PRIMARY KEY (identrada)
 );
@@ -81,9 +82,9 @@ PRIMARY KEY (idtipos)
 
 CREATE OR REPLACE TABLE sensaciones(
 codsensa int AUTO_INCREMENT,
-descripcion varchar (100),
-denominacion VARCHAR(100),
-localizacioncorporal VARCHAR(100), --('Cabeza','Cuello', 'Pecho', 'Estomago', 'Espalda', 'Manos', 'Pies', 'Otro'),
+descripcion varchar (500),
+denominacion VARCHAR(500),
+localizacioncorporal VARCHAR(500), --('Cabeza','Cuello', 'Pecho', 'Estomago', 'Espalda', 'Manos', 'Pies', 'Otro'),
 PRIMARY KEY (codsensa)
 );
 
